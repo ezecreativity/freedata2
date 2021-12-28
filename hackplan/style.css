@@ -107,3 +107,13 @@ h3{
     }
 
 }
+
+#note{
+    position: absolute;
+    top: 80px;
+    font-weight: bold;
+}
+
+#contact{
+    margin-top: 30px;
+}
