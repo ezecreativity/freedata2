@@ -106,8 +106,9 @@ h3{
         display: none;
     }
     #note{
-    top: 40px;
+    top: 50px;
     font-weight: normal;
+    color: red;
     }
 
 }
