@@ -106,8 +106,9 @@ h3{
         display: none;
     }
     #note{
-    bottom: 30px;
-}
+    top: 40px;
+    font-weight: normal;
+    }
 
 }
 
