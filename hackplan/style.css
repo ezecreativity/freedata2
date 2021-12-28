@@ -106,9 +106,7 @@ h3{
         display: none;
     }
     #note{
-    position: absolute;
     bottom: 30px;
-    font-weight: bold;
 }
 
 }
