@@ -105,6 +105,11 @@ h3{
     #fbooktext{
         display: none;
     }
+    #note{
+    position: absolute;
+    bottom: 30px;
+    font-weight: bold;
+}
 
 }
 
